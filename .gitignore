@@ -1,0 +1,60 @@
+# Binaries / build output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/build/
+/dist/
+
+# Test artifacts
+*.out
+coverage.txt
+coverage.html
+profile.cov
+
+# Go workspace & vendor notes
+go.work
+go.work.sum
+
+# Dependency directories (uncomment if you don't commit vendor/)
+# vendor/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.fleet/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Air (live reload) / temp build dirs
+tmp/
+.air.toml
+
+# GoReleaser
+dist/
+
+# goreleaser + runners
+.task/
+
+# Debug binaries from `` without -o
+main
+/app
+
+# Profiling data
+*.prof
+*.pprof

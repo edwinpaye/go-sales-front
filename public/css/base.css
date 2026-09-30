@@ -1,0 +1,28 @@
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--c-bg-0);
+  color: var(--c-text-0);
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1,h2,h3,h4 { margin: 0; font-weight: 600; letter-spacing: -0.01em; }
+p { margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--c-accent); text-decoration: none; }
+a:hover { color: var(--c-accent-2); }
+code, kbd { font-family: var(--font-mono); font-size: .92em; }
+::selection { background: var(--c-accent-soft); }
+
+/* Scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--c-bg-4) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: var(--c-bg-4); border-radius: var(--r-full); border: 2px solid transparent; background-clip: content-box; }
+*::-webkit-scrollbar-thumb:hover { background: var(--c-border-strong); background-clip: content-box; }
+
+/* Focus */
+:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; border-radius: var(--r-sm); }
